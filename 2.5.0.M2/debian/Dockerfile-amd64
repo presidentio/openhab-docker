@@ -97,7 +97,7 @@ COPY update.sh ${OPENHAB_HOME}/runtime/bin/update
 RUN chmod +x ${OPENHAB_HOME}/runtime/bin/update
 
 # Expose volume with configuration and userdata dir
-VOLUME ${OPENHAB_CONF} ${OPENHAB_USERDATA} ${OPENHAB_HOME}/addons
+VOLUME ${OPENHAB_USERDATA}
 
 # Expose HTTP, HTTPS, Console and LSP ports
 EXPOSE 8080 8443 8101 5007
